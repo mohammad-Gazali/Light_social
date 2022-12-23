@@ -48,3 +48,22 @@
 .mode-spin {
   transform: rotate(360deg);
 }
+
+
+/** Handling The Nav Search In Big Screens */
+
+.NavSearch:has(input:focus) + .AppLogo, .NavSearch:has(input:focus) span {
+  display: none;
+}
+
+.NavSearch:has(input:focus) input {
+  padding-left: 0.75rem !important;
+}
+
+.NavSearch:has(input:focus) ~ .ArrowIcon {
+  display: block;
+}
+
+.NavSearch:has(.ArrowIcon:focus) ~ .AppLogo {
+  display: block;
+}
