@@ -12,7 +12,7 @@ const NavRightLinkList = () => {
 			<NavIconLink icon={<BsFillChatDotsFill />} name="chat" />
 			<NavIconLink icon={<BsFillBellFill />} name="notifications" />
 			<NavPersonalLink
-				img={<img className="w-full h-full rounded-full" src={img} />}
+				img={<img className="object-cover w-full h-full rounded-full" src={img} />}
 				name="Rami"
 			/>
 		</ul>

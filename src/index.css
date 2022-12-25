@@ -23,6 +23,10 @@
     @apply flex justify-between items-center
   }
 
+  .frsc {
+    @apply flex justify-start items-center
+  }
+
   .fr_c {
     @apply flex items-center
   }
@@ -37,6 +41,10 @@
 
   .fc_c {
     @apply flex flex-col items-center
+  }
+
+  .fc_s {
+    @apply flex flex-col items-start
   }
 
 }
@@ -66,4 +74,22 @@
 
 .NavSearch:has(.ArrowIcon:focus) ~ .AppLogo {
   display: block;
+}
+
+/** Handling ScrollBar of LeftSideBar */
+.LeftSideBar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.LeftSideBar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.LeftSideBar::-webkit-scrollbar-thumb {
+  background: rgb(88, 88, 88, 0.2);
+  border-radius: 20px;
+}
+
+.LeftSideBar::-webkit-scrollbar-thumb:hover {
+  background: rgba(88, 88, 88, 0.4);
 }
