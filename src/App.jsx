@@ -1,10 +1,11 @@
-import { Navbar, LeftSideBar, DarkModeSwitcher } from "./components";
+import { Navbar, LeftSideBar, RightSideBar, DarkModeSwitcher } from "./components";
 
 function App() {
 	return (
 		<div className="dark:bg-zinc-900 bg-gray-100 min-h-screen w-full">
 			<Navbar />
 			<LeftSideBar />
+			<RightSideBar />
 			<DarkModeSwitcher />
 		</div>
 	);

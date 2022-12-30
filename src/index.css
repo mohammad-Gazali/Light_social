@@ -76,20 +76,20 @@
   display: block;
 }
 
-/** Handling ScrollBar of LeftSideBar */
-.LeftSideBar::-webkit-scrollbar {
+/** Handling ScrollBar of LeftSideBar and RightSideBar */
+:is(.LeftSideBar, .RightSideBar)::-webkit-scrollbar {
   width: 6px;
 }
 
-.LeftSideBar::-webkit-scrollbar-track {
+:is(.LeftSideBar, .RightSideBar)::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.LeftSideBar::-webkit-scrollbar-thumb {
+:is(.LeftSideBar, .RightSideBar)::-webkit-scrollbar-thumb {
   background: rgb(88, 88, 88, 0.2);
   border-radius: 20px;
 }
 
-.LeftSideBar::-webkit-scrollbar-thumb:hover {
+:is(.LeftSideBar, .RightSideBar)::-webkit-scrollbar-thumb:hover {
   background: rgba(88, 88, 88, 0.4);
 }
