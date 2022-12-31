@@ -8,4 +8,12 @@ const TooltipBottom = ({ content, more }) => {
   )
 }
 
-export { TooltipBottom }
+const TooltipRight = ({ content, more }) => {
+  return (
+    <div className={`${more} invisible opacity-0 bg-zinc-900/90 dark:bg-white/75 text-white dark:text-black rounded-lg px-2 py-1 shadow-md text-sm transition-all z-10`}>
+      { content }
+    </div>
+  )
+}
+
+export { TooltipBottom, TooltipRight }

@@ -27,6 +27,14 @@
     @apply flex justify-start items-center
   }
 
+  .frc_ {
+    @apply flex justify-center
+  }
+
+  .frs_ {
+    @apply flex justify-start
+  }
+
   .fr_c {
     @apply flex items-center
   }
@@ -92,4 +100,58 @@
 
 :is(.LeftSideBar, .RightSideBar)::-webkit-scrollbar-thumb:hover {
   background: rgba(88, 88, 88, 0.4);
+}
+
+
+/** Handling Responsive in Main Section and Right Side Bar */
+@media (1100px < width) {
+  .MainSection {
+    width: 54%;
+    margin-left: 0rem;
+  }
+
+  .RightSideBar {
+    width: 23%;
+  }
+}
+
+@media (1024px < width < 1101px) {
+  .MainSection {
+    width: 53%;
+    margin-right: 1.2rem;
+  }
+
+  .RightSideBar {
+    width: 25%;
+  }
+}
+
+@media (900px < width < 1025px) {
+  .MainSection {
+    width: 60%;
+    margin-left: 5vw;
+  }
+
+  .RightSideBar {
+    width: 30%;
+    margin-left: 2.5rem !important;
+  }
+}
+
+@media (767px < width < 901px) {
+  .MainSection {
+    width: 60%;
+    margin-left: 1rem;
+  }
+
+  .RightSideBar {
+    width: 35%;
+    margin-left: 2.5rem !important;
+  }
+}
+
+@media (width < 768px) {
+  .MainSection {
+    width: 500px;
+  }
 }
